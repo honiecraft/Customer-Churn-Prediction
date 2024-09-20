@@ -1,14 +1,9 @@
 # [ML-Python] Customer Churn Prediction
 
-## About
-One ecommerce company has a project on predicting churned users in order to offer potential promotions. 
-An attached file is the dataset that is offered by the company (churn_predict.csv). You will using these dataset to answer below questions: 
-> **Objective**
-> 1. What are the patterns/behavior of churned users? What are your suggestions to the company to reduce churned users. 
-> 2. Build the Machine Learning model for predicting churned users. (fine tuning) 
-> 3. Based on the behaviors of churned users, the company would like to offer some special promotions for them. 
-Please segment these churned users into groups. What are the differences between groups? 
-
+## Project goal
+- Analyzing the e-commerce customer churn data, identifying user **patterns that are likely to churn** and giving **suggestions** to the company to reduce churned users.
+- Build the **Machine Learning** model for **predicting churned users** (Supervised learning).
+- **Sort the users who have churned** based on their behaviors into groups and **describe the distinctions** between them (Unsupervised learning).
 
 ## Technology used
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -21,9 +16,10 @@ Please segment these churned users into groups. What are the differences between
 - **Logistic Regression**
 - **Random Forest Classifier**
 - **Decision Tree Classifier**
+- **K-Means**
 
 ## Dataset
-\
+The data set belongs to a leading **online E-Commerce** company. An online retail (E commerce) company wants to know the **customers who are going to churn**, so accordingly they can approach the customer to offer some **promotions**.\
 It has the following columns.
 
 |Variable|Description
@@ -56,7 +52,9 @@ Loading the data and understanding the features present in it.
 Perform univariate and bivariate analyses of the data, followed by feature transformations. 
 ### 3. Splitting the data
 Separate the data into three subsets: one for evaluation, one for testing, and one for model training.
-### 4. Building classification models 
+### 4. Building classification models with Supervised learning to predict churn users
 Select Machine Learning algorithms with training data to learn from and perform training data.
 ### 5. Evaluate models
 Evaluate the performance of each model based on evaluation matrices and select the top performing one.
+### 6. Segment churned users with Unsupervised learning
+Encoding, normalizating, PCA and applying **K-Means** model to label churned users.
