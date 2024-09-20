@@ -1,7 +1,14 @@
-# [ML-Python] Customer-Churn-Prediction
+# [ML-Python] Customer Churn Prediction
 
 ## About
-This project aims to examine **credit card transactions** data and provide insights regarding the **behaviors of fraudulent transactions**. Then, construct a classification ensemble model for **detecting credit card fraud** using **Machine Learning with Python**.
+One ecommerce company has a project on predicting churned users in order to offer potential promotions. 
+An attached file is the dataset that is offered by the company (churn_predict.csv). You will using these dataset to answer below questions: 
+> **Objective**
+> 1. What are the patterns/behavior of churned users? What are your suggestions to the company to reduce churned users. 
+> 2. Build the Machine Learning model for predicting churned users. (fine tuning) 
+> 3. Based on the behaviors of churned users, the company would like to offer some special promotions for them. 
+Please segment these churned users into groups. What are the differences between groups? 
+
 
 ## Technology used
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -12,36 +19,35 @@ This project aims to examine **credit card transactions** data and provide insig
 
 ## Machine learning algorithms used
 - **Logistic Regression**
-- **Decision Tree Classifier**
 - **Random Forest Classifier**
+- **Decision Tree Classifier**
 
 ## Dataset
-This data set contains the information of **credit card transactions** that are **marked as fraud transactions or not**.\
+\
 It has the following columns.
-|Column|Meaning|
+
+|Variable|Description
 |---|---|
-|trans_date_trans_time|The date and time of the transaction|
-|cc_num|Credit card number|
-|merchant|Merchant who was getting paid|
-|category|In what area does that merchant deal|
-|amt|Amount of money in American Dollars|
-|first|First name of the card holder|
-|last|Last name of the card holder|
-|gender|Gender of the cardholder. Just male and female|
-|street|Street of card holder residence|
-|city|City of card holder residence|
-|state|State of card holder residence|
-|zip|ZIP code of card holder residence|
-|lat|Latitude of card holder|
-|long|Longitude of card holder|
-|city_pop|Population of the city|
-|job|Trade of the card holder|
-|dob|Date of birth of the card holder|
-|trans_num|Transaction ID|
-|unix_time|Unix time which is the time calculated since 1970 to today|
-|merch_lat|Latitude of the merchant|
-|merch_long|Longitude of the merchant|
-|is_fraud|Whether the transaction is fraud (1) or not (0)|
+|CustomerID|Unique customer ID|
+|Churn|Churn Flag
+|Tenure|Tenure of customer in organization|
+|PreferredLoginDevice|Preferred login device of customer|
+|CityTier|City tier (1,2,3)|
+|WarehouseToHome|Distance in between warehouse to home of customer|
+|PreferPaymentMethod|PreferredPaymentMode Preferred payment method of customer|
+|Gender|Gender of customer|
+|HourSpendOnApp|Number of hours spend on mobile application or website|
+|NumberOfDeviceRegistered|Total number of devices is registered on particular customer|
+|PreferedOrderCat|Preferred order category of customer in last month|
+|SatisfactionScore|Satisfactory score of customer on service|
+|MaritalStatus|Marital status of customer|
+|NumberOfAddress|Total number of added added on particular customer|
+|Complain|Any complaint has been raised in last month|
+|OrderAmountHikeFromlastYear|Percentage increases in order from last year|
+|CouponUsed|Total number of coupon has been used in last month|
+|OrderCount|Total number of orders has been places in last month|
+|DaySinceLastOrder|Day Since last order by customer|
+|CashbackAmount|Average cashback in last month|
 
 ## Features
 ### 1. Importing and preparing the data 
